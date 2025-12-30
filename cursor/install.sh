@@ -30,8 +30,6 @@ for p in "${PLUGINS[@]}"; do
     echo "❌ 失败: $p"
 done
 
-# 可选：清理
-read -p "清理临时文件？(y/N): " -n 1
-[[ $REPLY =~ ^[Yy]$ ]] && rm -rf "$TMP" && echo "🗑️ 已清理"
+rm -rf "$TMP" && echo "🗑️ 已清理"
 
 echo "✅ 完成！"
