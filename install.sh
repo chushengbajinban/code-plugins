@@ -54,6 +54,13 @@ for plugin in "${PLUGINS[@]}"; do
     echo "❌ 失败: $filename"
 done
 
+# 安装 cursorpyright 插件
+echo "📥 anysphere.cursorpyright-1.0.10.vsix"
+curl -L --compressed -o "$TMP/anysphere.cursorpyright-1.0.10.vsix" \
+  https://raw.githubusercontent.com/chushengbajinban/code-plugins/main/anysphere.cursorpyright-1.0.10.vsix &&
+code --install-extension "$TMP/anysphere.cursorpyright-1.0.10.vsix" &&
+echo "✅ anysphere.cursorpyright-1.0.10.vsix" || echo "❌ anysphere.cursorpyright-1.0.10.vsix"
+
 rm -rf "$TMP" && echo "🗑️ 已清理"
 
 echo "✅ 所有插件安装完成！"
