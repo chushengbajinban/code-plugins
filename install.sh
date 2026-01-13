@@ -14,7 +14,7 @@
 PLUGINS=(
     "ms-python/python/2025.20.1/linux-x64"
     # "ms-python/black-formatter/2024.6.0"
-    "ms-python/vscode-pylance/2025.4.1"
+    # "ms-python/vscode-pylance/2025.4.1"
     "ms-python/debugpy/2025.18.0/linux-x64"
 )
 
